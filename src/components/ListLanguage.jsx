@@ -4,12 +4,12 @@ import "./list.css";
 
 const ListLanguage = () => {
   return (
-      <ul>
+      <ul className="flags">
         <Link to="/español">
-        <img src="" alt="español logo" />
+        <img src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/83cd13fd-5b9b-4894-8846-fb2acd69cd04.svg" alt="español logo" />
         </Link>
         <Link to="/english">
-        <img src="" alt="english logo" />
+        <img src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/84d2508e-84cb-4ffc-b238-18246c38f2bf.svg" alt="english logo" />
         </Link>
       </ul>
   );
