@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Card } from "../components/Card";
 import "./characterpage.css";
+import ListLanguage from "../components/ListLanguage"
 
 export const CharactersPage = () => {
   const [characters, setCharacters] = useState([]);
@@ -24,7 +25,7 @@ export const CharactersPage = () => {
           
           Buscar...</span>
           <img className="busqueda__homeimg" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/dbfeb53b-7b64-4e55-984b-6e3f413a161c.svg" alt="homelogo" />
-  
+          <ListLanguage/>
       </div>
      
       {characters.map((character) => (

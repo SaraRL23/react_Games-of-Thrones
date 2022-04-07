@@ -4,7 +4,7 @@ import "./navbar.css";
 
 const Navbar = () => {
     return (
-      <nav>
+      <nav className="navigator">
         <ul className="text-menu">
           <Link to="/characters">
             <span className="personajes Text-Style-3" >PERSONAJES</span>

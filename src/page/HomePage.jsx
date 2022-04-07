@@ -5,7 +5,7 @@ import "./homepage.css"
 
 export const HomePage = () => {
     return (
-        <div>
+        <div className='fondo'>
             <ListLanguage/>
               <Navbar />
             <div className="caja">
