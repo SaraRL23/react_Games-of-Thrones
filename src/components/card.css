@@ -1,0 +1,18 @@
+
+.gallery{
+    display: flex;
+    width: 248px;
+    width: 320px;
+}
+.gallery__card{
+    display: flex;
+}
+.gallery__img{
+    width: 248px;
+    height: 320px;
+
+    
+}
+.gallery__text{
+    color: beige;
+}

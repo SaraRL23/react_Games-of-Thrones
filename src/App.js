@@ -1,21 +1,31 @@
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
+
+import { CharactersDetailPage } from './page/CharactersDetailPage';
+import { CharactersPage } from './page/CharactersPage';
+
 import { Cronologia } from './page/Cronologia';
+
 import { HomePage } from './page/HomePage';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { Casas } from './page/Casas';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-      <HomePage/>
+
+     <Router>
+    
        <Routes>
-            <Route path="/casas" element={<Casas />} />
-            {/* <Route path="/characters/:id" element={<Personajes />} /> */}
-            <Route path="/cronologia" element={<Cronologia />} />
+        <HomePage/>
+       <Route path='/characters' element={<CharactersPage />}/>
+       <Route path="/characters/:_id" element={<CharactersDetailPage />}/>
+       <Route path="/casas" element={<Casas />} />
+       <Route path="/cronologia" element={<Cronologia />} />
    
     </Routes>
     </Router>
+
     </div>
   );
 }
