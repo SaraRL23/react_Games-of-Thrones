@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
       <nav>
         <ul className="text-menu">
-          <Link to="/characterspage">
+          <Link to="/characters">
             <span className="personajes Text-Style-3" >PERSONAJES</span>
           </Link>
           <Link to="/casas">

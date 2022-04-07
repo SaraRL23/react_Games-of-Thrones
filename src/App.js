@@ -13,11 +13,10 @@ import { Casas } from './page/Casas';
 function App() {
   return (
     <div className="App">
-
-     <Router>
     
+     <Router>
        <Routes>
-        <HomePage/>
+       <Route path='/' element={<HomePage />}/>
        <Route path='/characters' element={<CharactersPage />}/>
        <Route path="/characters/:_id" element={<CharactersDetailPage />}/>
        <Route path="/casas" element={<Casas />} />
