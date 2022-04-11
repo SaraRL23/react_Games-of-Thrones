@@ -1,0 +1,14 @@
+.characterdetail{
+    margin-top: 0;
+}
+.characterdetail__title{
+    color: white;
+    font-size: xx-large;
+}
+.characterdetail__text{
+    color: white;
+}
+.characterdetail__list{
+    display: flex;
+    list-style-type: none;
+}

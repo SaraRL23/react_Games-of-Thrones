@@ -18,7 +18,7 @@ function App() {
        <Routes>
        <Route path='/' element={<HomePage />}/>
        <Route path='/characters' element={<CharactersPage />}/>
-       <Route path="/characters/:_id" element={<CharactersDetailPage />}/>
+       <Route path="/characters/:name" element={<CharactersDetailPage />}/>
        <Route path="/casas" element={<Casas />} />
        <Route path="/cronologia" element={<Cronologia />} />
    

@@ -1,8 +1,14 @@
 .box{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden ;
     flex-wrap: wrap;
     background-color: black;
-    padding-left: 176px;  
+    margin-top: 60px;
+    height: 80vh;
+
+
    
     
 
@@ -28,10 +34,14 @@
     display: flex;
     justify-content: space-between;
     text-align: left;
-    margin-right: 176px;
 }
 .busqueda__homeimg{
     display: flex;
     justify-content: right;
+
+}
+.busqueda__gallery{
+    display: flex;
+    flex-wrap: wrap;
 
 }

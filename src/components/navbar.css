@@ -1,59 +1,18 @@
-.text-menu{
+.navigator{
     position:absolute;
-    display: flex;
-    justify-content: end;
-    align-items: center;
     bottom: 10px; 
-    z-index: 1;
+    font-family: got;
+    width: 100%;
 }
-
-
-.personajes{
-        width: 330px;
-        height: 44px;
-        margin: 30px 150px 0 0;
-        font-family: GameofThrones;
-        font-size: 36px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: var(--white);
+.navigator-ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
 }
-
-.casas {
-    width: 330px;
-    height: 44px;
-    margin: 0 200px 0 100px;
-    font-family: GameofThrones;
-    font-size: 36px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--white);
-  }
-
-  .Cronologia {
-    width: 330px;
-    height: 44px;
-    margin: 0 0 0 100px;
-    font-family: GameofThrones;
-    font-size: 36px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--white);
-  }
-  .navigator{
-    display: flex;
-    justify-content: center;
-  }
-  a{
-    text-decoration: none;
-    color: white;
-  }
+.navigator-link{
+  font-family: got;
+  color: white;
+}
+a{
+  text-decoration: none;
+}

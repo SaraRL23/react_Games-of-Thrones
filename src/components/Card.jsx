@@ -4,13 +4,14 @@ import "./card.css"
 
 export const Card = ({character}) => {
   return (
-    // <Link to={generatePath("characters/:id", { id: character._id })}>
+     <Link to={generatePath("/characters/:name", { name: character.name })}>
         <div className="gallery">
       <figure className='gallery_card' key={character._id} >
-        <p className='gallery__text'>{character.name}</p>
+     
         <img className='gallery__img' src={character.image} alt={character.name} />
+           <p className='gallery__text'>{character.name}</p>
       </figure>
       </div>
-    // </Link>
+     </Link>
   )
 }

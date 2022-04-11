@@ -5,15 +5,15 @@ import "./navbar.css";
 const Navbar = () => {
     return (
       <nav className="navigator">
-        <ul className="text-menu">
-          <Link to="/characters">
-            <span className="personajes Text-Style-3" >PERSONAJES</span>
+        <ul className="navigator-ul">
+          <Link className="navigator-link" to="/characters">
+            <li>PERSONAJES</li>
           </Link>
-          <Link to="/casas">
-            <span className="casas Text-Style-3">CASAS</span>
+          <Link className="navigator-link"  to="/casas">
+            <li>CASAS</li>
           </Link>
-          <Link to="/cronologia">
-            <span className="Cronologia Text-Style-3">CRONOLOGIA</span>
+          <Link className="navigator-link"  to="/cronologia">
+            <li>CRONOLOGIA</li>
           </Link>
         </ul>
         
