@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar"
 import "../components/navbar.css"
 import HomeButton from "../components/HomeButton";
 import Search from "../components/Search";
-import { CardCharacter } from "../components/CardCharacter"
+import { CardCharacter } from "../components/CardCharacter";
 
 
 export const CharactersPage = () => {
