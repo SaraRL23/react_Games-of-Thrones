@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import {useState, useEffect} from "react";
 import axios from 'axios';
 import { CardHouse } from '../components/CardHouse';
+import Search from '../components/Search';
 // import { Link } from "react-router-dom";
 
 export const HousesPage = () => {
@@ -21,6 +22,7 @@ export const HousesPage = () => {
 
   return (
     <>
+    <Search />
     <HomeButton />
 <ListLanguage />
     <div className="box">
