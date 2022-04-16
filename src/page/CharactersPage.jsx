@@ -1,13 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Card } from "../components/Card";
 import "./characterpage.css";
 import ListLanguage from "../components/ListLanguage"
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar"
 import "../components/navbar.css"
 import HomeButton from "../components/HomeButton";
-import { CardCharacter } from "../components/CardCharacter";
 import Search from "../components/Search";
+
 
 export const CharactersPage = () => {
   const [characters, setCharacters] = useState([]);
@@ -23,14 +23,16 @@ export const CharactersPage = () => {
 
   return (
     <>
+    <Search />
     <HomeButton />
-<ListLanguage />
+    <ListLanguage />
     <div className="box">
-      <Search />
       <div className="busqueda__gallery">
+    
       {characters.map((character) => (
-        <CardCharacter character={character} key={character._id} />
-      ))}
+        <Card character={character} key={character._id} />
+      ))}  
+      
      </div>
       <Navbar />
     </div>
