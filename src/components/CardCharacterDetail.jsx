@@ -1,7 +1,7 @@
 import React from 'react'
 import "./carddetail.css"
 
-const CardDetail = ({character}) => {
+const CardCharacterDetail = ({character}) => {
   return (
         <>
         {character &&
@@ -29,4 +29,4 @@ const CardDetail = ({character}) => {
   )
 }
 
-export default CardDetail
+export default CardCharacterDetail

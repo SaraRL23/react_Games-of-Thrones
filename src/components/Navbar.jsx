@@ -9,7 +9,7 @@ const Navbar = () => {
           <Link className="navigator-link" to="/characters">
             <li>PERSONAJES</li>
           </Link>
-          <Link className="navigator-link"  to="/casas">
+          <Link className="navigator-link"  to="/houses">
             <li>CASAS</li>
           </Link>
           <Link className="navigator-link"  to="/cronologia">
