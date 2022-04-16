@@ -1,0 +1,23 @@
+.house{
+    color:white;
+    width: 300px;
+    margin-top: 100px;
+
+}
+.housedetail{
+    margin-top: 0;
+}
+.housedetail__title{
+    color: white;
+    font-size: small;
+}
+.housedetail__text{
+    color: white;
+}
+.housedetail__list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: xx-small;
+    margin-top: 60px;
+}

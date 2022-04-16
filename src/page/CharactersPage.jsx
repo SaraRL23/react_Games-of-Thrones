@@ -1,12 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Card } from "../components/Card";
 import "./characterpage.css";
 import ListLanguage from "../components/ListLanguage"
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar"
 import "../components/navbar.css"
 import HomeButton from "../components/HomeButton";
+import { CardCharacter } from "../components/CardCharacter";
 
 export const CharactersPage = () => {
   const [characters, setCharacters] = useState([]);
@@ -38,7 +38,7 @@ export const CharactersPage = () => {
       </div>
       <div className="busqueda__gallery">
       {characters.map((character) => (
-        <Card character={character} key={character._id} />
+        <CardCharacter character={character} key={character._id} />
       ))}
      </div>
       <Navbar />

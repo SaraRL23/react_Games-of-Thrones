@@ -2,7 +2,7 @@ import React from 'react'
 import { generatePath, Link } from 'react-router-dom'
 import "./card.css"
 
-export const Card = ({character}) => {
+export const CardCharacter = ({character}) => {
   return (
      <Link to={generatePath("/characters/:name", { name: character.name })}>
         <div className="gallery">

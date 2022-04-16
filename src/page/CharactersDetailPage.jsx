@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import CardDetail from '../components/CardDetail';
 import "./charactersdetailpage.css";
 import HomeButton from '../components/HomeButton';
 import ListLanguage from '../components/ListLanguage'
+import CardCharacterDetail from '../components/CardCharacterDetail';
 
 export const CharactersDetailPage = () => {
   const urlGot = 'https://api.got.show/api/show/characters/'
@@ -25,7 +25,7 @@ export const CharactersDetailPage = () => {
     <div className='characterdetailpage'>
       <HomeButton />
      <ListLanguage />
-    <CardDetail character={character}/>
+    <CardCharacterDetail character={character}/>
     </div>
   )
 }

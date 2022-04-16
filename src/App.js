@@ -7,8 +7,9 @@ import { CharactersPage } from './page/CharactersPage';
 import { Cronologia } from './page/Cronologia';
 
 import { HomePage } from './page/HomePage';
+import { HousesDetailPage } from './page/HousesDetailPage';
 
-import { Casas } from './page/Casas';
+import { HousesPage } from './page/HousesPage';
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
        <Route path='/' element={<HomePage />}/>
        <Route path='/characters' element={<CharactersPage />}/>
        <Route path="/characters/:name" element={<CharactersDetailPage />}/>
-       <Route path="/casas" element={<Casas />} />
+       <Route path="/houses" element={<HousesPage />} />
+       <Route path="/houses/:name" element={<HousesDetailPage />} />
        <Route path="/cronologia" element={<Cronologia />} />
    
     </Routes>
