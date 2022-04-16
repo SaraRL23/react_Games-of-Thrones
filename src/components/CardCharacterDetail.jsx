@@ -1,7 +1,7 @@
 import React from 'react'
-import "./carddetail.css"
+import "./cardcharacterdetail.css"
 
-const CardCharacterDetail = ({character}) => {
+const CardCharacterDetail = ({character}) => {  
   return (
         <>
         {character &&

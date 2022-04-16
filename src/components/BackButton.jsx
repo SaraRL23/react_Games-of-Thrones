@@ -1,36 +1,14 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import "./BackButton.css"
 
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom';
-import CardCharacterDetail from '../components/CardCharacterDetail';
-import "./charactersdetailpage.css";
-import HomeButton from '../components/HomeButton';
-import ListLanguage from '../components/ListLanguage'
-import BackButton from  '../components/BackButton'
-
-export const CharactersDetailPage = () => {
-  const urlGot = 'https://api.got.show/api/show/characters/'
-  const [character, setCharacter] = useState([]);
-  let {name} = useParams("name");
-
-
-  useEffect (() => {
-
-    const getCharactersByName = async () =>{
-      const res = await axios.get(`${urlGot}${name}`)
-      setCharacter(res.data)
-      console.log(res.data, "esto es el detalle")
-    };
-    getCharactersByName();
-  }, []);
-
+const BackButton = () => {
   return (
-    <div className='characterdetailpage'>
-      <Link to="/characters"><BackButton />
-      </Link>
-      <HomeButton />
-     <ListLanguage />
-    <CardCharacterDetail character={character}/>
+    <div className="c-back">
+        <img src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/e042365d-a1dc-4fef-ab6c-245a7c85f922.svg" alt="back" />
+        <p>Volver</p>
     </div>
   )
 }
+
+export default BackButton

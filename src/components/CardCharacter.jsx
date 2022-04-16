@@ -2,7 +2,7 @@ import React from 'react'
 import { generatePath, Link } from 'react-router-dom'
 import "./cardcharacter.css"
 
-export const Card = ({character}) => {
+export const CardCharacter = ({character}) => {
   return (
     <>
     {character && character.image &&
