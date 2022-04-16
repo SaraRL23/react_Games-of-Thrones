@@ -6,9 +6,22 @@
     font-size: xx-large;
 }
 .characterdetail__text{
+    width: 280px;
     color: white;
+    font-size: large;
+    
 }
 .characterdetail__list{
     display: flex;
     list-style-type: none;
+}
+.characterdetail__img{
+    width: 270px;
+    height: 280px;
+   
+}
+.characterdetail__img-casa{
+    width: 180px;
+    height: 200px;
+   
 }

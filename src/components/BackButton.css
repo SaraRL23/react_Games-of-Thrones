@@ -1,0 +1,9 @@
+.c-back{
+    position:absolute;
+    left: 20px;
+    top: 26px;
+    color: white;
+    font-size: x-large;
+    display: flex;
+    gap: 10px;
+}

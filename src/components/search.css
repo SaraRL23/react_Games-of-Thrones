@@ -1,0 +1,27 @@
+.c-search{
+    position:absolute;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center; 
+    left: 64px;
+    top: 28px;
+}
+.c-search__button{
+    background-color: black;
+    border-bottom: 4px bold white;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: white;
+    width: 500px;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+}
+.c-search__img{
+    text-decoration: underline;
+    margin-bottom: 10px solid white;
+}    
+        
