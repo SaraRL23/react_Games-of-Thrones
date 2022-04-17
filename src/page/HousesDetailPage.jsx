@@ -1,9 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import HomeButton from '../components/HomeButton';
 import ListLanguage from '../components/ListLanguage'
 import { CardHouseDetail } from '../components/CardHouseDetail';
+import BackButton from '../components/BackButton'
 
 import '../components/cardhousedetail.css'
 
@@ -24,9 +25,15 @@ export const HousesDetailPage = () => {
 
   return (
     <div className='title'>
+      
+      <ListLanguage />
       <HomeButton />
-     <ListLanguage />
+      <Link to="/houses">
+      <BackButton />
+      </Link>
+     
     <CardHouseDetail house={house}/>
+   
     </div>
   )
 }

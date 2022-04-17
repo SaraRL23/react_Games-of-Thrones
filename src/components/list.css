@@ -5,6 +5,15 @@
     align-items: center;
     z-index: 1;  
     right: 30px;
-    top: 4px;
-    gap: 20px;
+    top: 1px;
+    gap: 16px;
+    padding: 0px;
+    margin: 0px;
+   
 }
+
+.ancord{
+    padding: 0px;
+    margin: 0px;
+    font-size: 80px;
+} 

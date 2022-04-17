@@ -18,7 +18,7 @@ export const CharactersDetailPage = () => {
     const getCharactersByName = async () =>{
       const res = await axios.get(`${urlGot}${name}`)
       setCharacter(res.data)
-      console.log(res.data, "esto es el detalle")
+      
     };
     getCharactersByName();
   }, []);
