@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./i18n"; //mandatory
 // import i18n from "i18next";
 // import { esp } from './es';
 // import { eng } from './en';
