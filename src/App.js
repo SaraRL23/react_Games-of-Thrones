@@ -11,6 +11,18 @@ import { HousesDetailPage } from './page/HousesDetailPage';
 
 import { HousesPage } from './page/HousesPage';
 
+// import { ReactComponent as WorkIcon } from "./work.svg";
+// import { ReactComponent as SchoolIcon } from "./school.svg";
+
+import timelineElements from "./components/timeLineElements";
+
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component"
+
+import "react-vertical-timeline-component/style.min.css";
+
 function App() {
   return (
     <div className="App">
@@ -23,6 +35,8 @@ function App() {
        <Route path="/houses" element={<HousesPage />} />
        <Route path="/houses/:name" element={<HousesDetailPage />} />
        <Route path="/cronologia" element={<Cronologia />} />
+
+      
    
     </Routes>
     </Router>
