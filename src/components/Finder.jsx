@@ -13,7 +13,7 @@ const Finder = () => {
   return (
     <>
     {location.pathname=== '/characters' || location.pathname === "/houses" ? <div className='find-contain'>
-    <img className='find-img' src = {find} alt = 'find'></img>
+    <img className='find-img' src = 'https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/15bd4fae-6df6-4fca-8e4a-4889bba7186c.svg' alt = 'find'></img>
     <input className='finder' type="text" placeholder='buscar'{... register('NewFind')}></input>
     </div>:null}
     </>
