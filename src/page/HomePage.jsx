@@ -1,7 +1,8 @@
-import React from 'react'
-import ListLanguage from '../components/ListLanguage'
-import Navbar from '../components/Navbar'
-import "./homepage.css"
+import React from 'react';
+import ListLanguage from '../components/ListLanguage';
+import Navbar from '../components/Navbar';
+import "./homepage.css";
+import { t } from 'i18next'
 
 export const HomePage = () => {
     return (
@@ -11,7 +12,7 @@ export const HomePage = () => {
         <div className='fondo'>
             
             <div className="caja">
-                <h1 className="title">GAMES OF THRONES</h1>
+                <h1 className="title">{t("title")}</h1>
             </div>
         </div>
         </>
