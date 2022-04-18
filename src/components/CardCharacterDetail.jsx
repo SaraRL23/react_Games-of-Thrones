@@ -2,10 +2,12 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import "./cardcharacterdetail.css";
 import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 
 const CardCharacterDetail = ({character}) => {  
     const [house, setHouse] = useState({});
+    const { t, i18n } = useTranslation(["translation"]);
 
     useEffect(() => {
       axios({
