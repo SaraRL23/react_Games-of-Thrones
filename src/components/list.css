@@ -5,12 +5,12 @@
     align-items: center;
     z-index: 1;  
     right: 30px;
-    top: 1px;
+    top: 16px;
     gap: 16px;
     padding: 0px;
     margin: 0px;
    
-}
+}   
 
 .ancord{
     padding: 0px;

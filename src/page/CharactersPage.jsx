@@ -11,6 +11,7 @@ import { CardCharacter } from "../components/CardCharacter";
 
 export const CharactersPage = () => {
   const [characters, setCharacters] = useState([]);
+  const [fCharacters, setFCharacters] = useState([]);
 
   useEffect(() => {
     const getCharacters = async () => {
@@ -20,6 +21,16 @@ export const CharactersPage = () => {
     };
     getCharacters();
   }, []);
+  
+  // useEffect(() =>{
+  //   const filtering = ()=>{
+
+  //     const filtered=characters.filter(item=>item.name.toLowerCase().includes(find.toLowerCase()))
+  //     console.log('lo filtrado', filtered)
+  //     setFCharacters(filtered)
+  //   }
+  //   filtering();
+  // },[])   
 
   return (
     <>
