@@ -7,6 +7,8 @@ import "../components/navbar.css"
 import HomeButton from "../components/HomeButton";
 import Search from "../components/Search";
 import { CardCharacter } from "../components/CardCharacter";
+import Finder from "../components/Finder"
+import FindContext from "../Context/FindContext";
 
 
 export const CharactersPage = () => {
@@ -30,11 +32,14 @@ export const CharactersPage = () => {
   //     setFCharacters(filtered)
   //   }
   //   filtering();
-  // },[])   
+  // },[find])   
 
   return (
     <>
+     {/* <FindContext.Provider> */}
     <Search />
+   
+    {/* <Finder /> */}
     <HomeButton />
     <ListLanguage />
     <div className="box">
@@ -47,6 +52,7 @@ export const CharactersPage = () => {
      </div>
       <Navbar />
     </div>
+    {/* </FindContext.Provider> */}
     </>
   );
 };

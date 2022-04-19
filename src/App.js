@@ -6,27 +6,28 @@ import { CharactersPage } from './page/CharactersPage';
 
 import { Cronologia } from './page/Cronologia';
 
-import { HomePage } from './page/HomePage';
+import { HomePage } from './page/HomePage'; 
 import { HousesDetailPage } from './page/HousesDetailPage';
 
 import { HousesPage } from './page/HousesPage';
 
+
 // import { ReactComponent as WorkIcon } from "./work.svg";
 // import { ReactComponent as SchoolIcon } from "./school.svg";
 
-import timelineElements from "./components/timeLineElements";
+// import timelineElements from "./components/timeLineElements";
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component"
+// import {
+//   VerticalTimeline,
+//   VerticalTimelineElement,
+// } from "react-vertical-timeline-component"
 
-import "react-vertical-timeline-component/style.min.css";
+// import "react-vertical-timeline-component/style.min.css";
 
 function App() {
   return (
     <div className="App">
-    
+     
      <Router>
        <Routes>
        <Route path='/' element={<HomePage />}/>
