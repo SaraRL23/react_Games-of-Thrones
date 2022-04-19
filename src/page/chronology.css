@@ -1,0 +1,26 @@
+
+.vertical-timeline-element-title{
+    font-family: got;
+    font-weight: lighter;
+}
+.vertical-timeline-element-subtitle{
+    font-size:x-large;
+    font-family: got;
+    padding: 10px;
+}
+
+.timeline_img{
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    width: 200px;
+    height: 200px;
+}
+
+.VerticalTimelineElement{
+ width: 100px;
+}
+.vertical-timeline-element-content{
+    background-color: black;
+}

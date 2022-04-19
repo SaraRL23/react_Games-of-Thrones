@@ -4,7 +4,7 @@ import './App.css';
 import { CharactersDetailPage } from './page/CharactersDetailPage';
 import { CharactersPage } from './page/CharactersPage';
 
-import { Cronologia } from './page/Cronologia';
+import { Chronology } from './page/Chronology';
 
 import { HomePage } from './page/HomePage';
 import { HousesDetailPage } from './page/HousesDetailPage';
@@ -34,7 +34,7 @@ function App() {
        <Route path="/characters/:name" element={<CharactersDetailPage />}/>
        <Route path="/houses" element={<HousesPage />} />
        <Route path="/houses/:name" element={<HousesDetailPage />} />
-       <Route path="/cronologia" element={<Cronologia />} />
+       <Route path="/chronology" element={<Chronology />} />
 
       
    
