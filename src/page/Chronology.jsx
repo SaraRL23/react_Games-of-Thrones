@@ -49,7 +49,7 @@ export const Chronology = () => {
   return (
     <div className="box">
     
-      <button onClick={changeOrder}>Sort</button>
+      {/* <button onClick={changeOrder}>Sort</button> */}
       <VerticalTimeline>
         {orderedCharacters.map(element => {
           return (
