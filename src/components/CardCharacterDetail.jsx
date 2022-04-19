@@ -31,20 +31,20 @@ const CardCharacterDetail = ({character}) => {
         <img className='characterdetail__img' src={character.image} alt={character.name} />
         <figcaption key={character.id} className='characterdetail__title'>{character.name}</figcaption>
         <div>
-            <ul className='characterdetail__list'>
+            <div className='characterdetail__list'>
                     {house && house.logoURL &&
-                <li className='characterdetail__text'> <h3>{t("house")}</h3><img className='characterdetail__img-casa' src={house.logoURL} alt="" /></li>
+                <ul className='characterdetail__text'> <h3 className='characterdetail__title-got'>{t("house")}</h3><img className='characterdetail__img-casa' src={house.logoURL} alt="" /></ul>
                     }
-                <li className='characterdetail__text'> <h3>{t("allegiances")}</h3> {character.allegiances}</li>
-                <li className='characterdetail__text'> <h3>{t("appearances")}</h3>{character.appearances} </li>
+                <ul className='characterdetail__text'> <h3 className='characterdetail__title-got'>{t("allegiances")}</h3> {character.allegiances.map((allegiance) => (<li className='characterdetail__li'>{allegiance}</li>))}</ul>
+                <ul className='characterdetail__text,  timeline-container-small'> <h3>{t("appearances")}</h3> {character.appearances.map((appearance) => (<li className='characterdetail__li'>{appearance}</li>))}</ul>
                 {character.father &&
-                <li className='characterdetail__text'> <h3>{t("father")}</h3>{character.father}</li>
+                <ul className='characterdetail__text'> <h3 className='characterdetail__title-got'>{t("father")}</h3>{character.father}</ul>
                 }
                 {character.siblings &&
-                <li className='characterdetail__text'> <h3>{t("related")}</h3>{character.siblings}</li>
+                <ul className='characterdetail__text'> <h3 className='characterdetail__title-got'>{t("related")}</h3>{character.siblings.map((sibling) => (<li className='characterdetail__li'>{sibling}</li>))}</ul>
                 }
-                <li className='characterdetail__text'> <h3>{t("titles")}</h3>{character.titles} </li>
-            </ul>
+                <ul className='characterdetail__text,  timeline-container-small'> <h3>{t("titles")}</h3>{character.titles.map((titles) => (<li className='characterdetail__li'>{titles}</li>))}</ul>
+            </div>
         </div>
 
     </figure>}

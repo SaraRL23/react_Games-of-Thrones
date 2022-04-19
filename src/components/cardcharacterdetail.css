@@ -3,7 +3,7 @@
 }
 .characterdetail__title{
     color: white;
-    font-size: xx-large;
+    font-size: 80px;
 }
 .characterdetail__text{
     width: 280px;
@@ -14,14 +14,52 @@
 .characterdetail__list{
     display: flex;
     list-style-type: none;
+    margin-top: 100px;
 }
 .characterdetail__img{
     width: 270px;
     height: 280px;
-   
+    margin-top: 120px;
+    margin-bottom: 30px;
 }
 .characterdetail__img-casa{
     width: 180px;
     height: 200px;
    
+}
+.characterdetail__li{
+    list-style-type: none;
+}
+.timeline-container-small {
+    height: 160px;
+    width: 190px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+    color: white;
+    font-size: large;
+    text-align: left;
+  }
+  
+  .timeline-container-small::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .timeline-container-small::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+  }
+  
+  .timeline-container-small::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(54, 54, 54);
+  }
+  .characterdetail__title-got{
+    color: white;
+    font-size: x-large;
+    font-family: got;
+    font-weight: lighter;
 }
