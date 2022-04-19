@@ -41,3 +41,28 @@
     flex-wrap: wrap;
 
 }
+.timeline-container {
+    height: 750px;
+    width: 96%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 10vh;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .timeline-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .timeline-container::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+  }
+  
+  .timeline-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(54, 54, 54);
+  }

@@ -42,8 +42,8 @@ export const CharactersPage = () => {
     {/* <Finder /> */}
     <HomeButton />
     <ListLanguage />
-    <div className="box">
-      <div className="busqueda__gallery">
+    <div className="box, timeline-container">
+      <div className="busqueda__gallery"  >
     
       {characters.map((character) => (
         <CardCharacter character={character} key={character._id} />
