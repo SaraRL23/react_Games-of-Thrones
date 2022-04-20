@@ -46,8 +46,9 @@ export const Chronology = () => {
     }
   }
   showOrderCharacters()
+  
   return (
-    <div className="box">
+    <div className="box, timeline-container">
     
       {/* <button onClick={changeOrder}>Sort</button> */}
       <VerticalTimeline>
