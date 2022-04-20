@@ -4,7 +4,9 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import HomeButton from '../components/HomeButton'
 import ListLanguage from '../components/ListLanguage'
 import Navbar from "../components/Navbar";
-import "./chronology.css"
+import 'react-vertical-timeline-component/style.min.css';
+import "./chronology.css";
+
 
 
 
