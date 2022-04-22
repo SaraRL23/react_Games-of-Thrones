@@ -26,7 +26,7 @@
 }
 
 .timeline-container {
-    height: 800px;
+    /* height: 800px; */
     width: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -49,3 +49,21 @@
     border-radius: 10px;
     background-color: rgb(54, 54, 54);
   }
+.c-chronology__btn{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: black;
+color: white;
+font-size: x-large;
+}
+.c-container__btn{
+ position: absolute;
+ z-index: 1;
+ top: 90px;
+ right: 47%;
+
+}

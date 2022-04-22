@@ -10,6 +10,7 @@ import Search from '../components/Search';
 
 export const HousesPage = () => {
   const [houses, setHouses] = useState([]);
+  const [fHouses, setFHouses] = useState([]);
 
   useEffect(() => {
     const getHouses = async () => {
@@ -20,12 +21,38 @@ export const HousesPage = () => {
     getHouses();
   }, []);
 
+  const handleChange=e=>{
+    setFHouses(e.target.value);
+    filtrar(e.target.value);
+  }
+  const filtrar=(searchdata)=>{
+    var resData=houses.filter((element)=>{
+      if(element.name.toString().toLowerCase().includes(searchdata.toLowerCase())
+      ){
+        return element;
+      }
+    });
+    setHouses(resData);
+  }
+
+
+
+
   return (
     <>
-    <Search />
+    
     <HomeButton />
 <ListLanguage />
     <div className="box">
+    <div className="c-search">
+      <img className="c-search__img" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/15bd4fae-6df6-4fca-8e4a-4889bba7186c.svg" alt="" />
+        <input
+          className="c-search__button"
+          value={fHouses}
+          placeholder="Buscar..."
+          onChange={handleChange}
+        />
+      </div>
       <div className="busqueda">
       </div>
       <div className="busqueda__gallery">
