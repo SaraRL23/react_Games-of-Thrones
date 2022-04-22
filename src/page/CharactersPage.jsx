@@ -5,10 +5,9 @@ import ListLanguage from "../components/ListLanguage"
 import Navbar from "../components/Navbar"
 import "../components/navbar.css"
 import HomeButton from "../components/HomeButton";
-import Search from "../components/Search";
+
 import { CardCharacter } from "../components/CardCharacter";
-import Finder from "../components/Finder"
-import FindContext from "../Context/FindContext";
+
 
 
 export const CharactersPage = () => {
@@ -23,26 +22,39 @@ export const CharactersPage = () => {
     };
     getCharacters();
   }, []);
-  
-  // useEffect(() =>{
-  //   const filtering = ()=>{
 
-  //     const filtered=characters.filter(item=>item.name.toLowerCase().includes(find.toLowerCase()))
-  //     console.log('lo filtrado', filtered)
-  //     setFCharacters(filtered)
-  //   }
-  //   filtering();
-  // },[find])   
+  const handleChange=e=>{
+    setFCharacters(e.target.value);
+    filtrar(e.target.value);
+  }
+  const filtrar=(searchdata)=>{
+    var resData=characters.filter((element)=>{
+      if(element.name.toString().toLowerCase().includes(searchdata.toLowerCase())
+      ){
+        return element;
+      }
+    });
+    setCharacters(resData);
+  }
+
+  
+ 
 
   return (
     <>
-     {/* <FindContext.Provider> */}
-    <Search />
    
-    {/* <Finder /> */}
     <HomeButton />
     <ListLanguage />
     <div className="box, timeline-container">
+    <div className="c-search">
+      <img className="c-search__img" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/15bd4fae-6df6-4fca-8e4a-4889bba7186c.svg" alt="" />
+        <input
+          className="c-search__button"
+          value={fCharacters}
+          placeholder="Buscar..."
+          onChange={handleChange}
+        />
+      </div>
       <div className="busqueda__gallery"  >
     
       {characters.map((character) => (
@@ -52,7 +64,8 @@ export const CharactersPage = () => {
      </div>
       <Navbar />
     </div>
-    {/* </FindContext.Provider> */}
     </>
   );
 };
+
+
