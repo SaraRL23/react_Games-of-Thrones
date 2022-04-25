@@ -6,33 +6,33 @@ import {useState, useEffect} from "react";
 import axios from 'axios';
 import { CardHouse } from '../components/CardHouse';
 import Search from '../components/Search';
-// import { Link } from "react-router-dom";
+
 
 export const HousesPage = () => {
   const [houses, setHouses] = useState([]);
   const [fHouses, setFHouses] = useState([]);
-
+  const [searchData, setSearchData] = useState("");
   useEffect(() => {
     const getHouses = async () => {
       const res = await axios.get("https://api.got.show/api/show/houses/");
       console.log(res.data);
+      setFHouses(res.data)
       setHouses(res.data);
     };
     getHouses();
   }, []);
 
   const handleChange=e=>{
-    setFHouses(e.target.value);
-    filtrar(e.target.value);
+    filtrar(e.target.value)
   }
   const filtrar=(searchdata)=>{
-    var resData=houses.filter((element)=>{
+    var fHouse=fHouses.filter((element)=>{
       if(element.name.toString().toLowerCase().includes(searchdata.toLowerCase())
       ){
         return element;
       }
     });
-    setHouses(resData);
+    setHouses(fHouse);
   }
 
 
@@ -48,7 +48,8 @@ export const HousesPage = () => {
       <img className="c-search__img" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/15bd4fae-6df6-4fca-8e4a-4889bba7186c.svg" alt="" />
         <input
           className="c-search__button"
-          value={fHouses}
+          
+        
           placeholder="Buscar..."
           onChange={handleChange}
         />
