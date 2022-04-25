@@ -19,22 +19,23 @@ export const CharactersPage = () => {
       const res = await axios.get("https://api.got.show/api/show/characters/");
       console.log(res.data);
       setCharacters(res.data);
+      setFCharacters(res.data);
     };
     getCharacters();
   }, []);
 
   const handleChange=e=>{
-    setFCharacters(e.target.value);
     filtrar(e.target.value);
   }
   const filtrar=(searchdata)=>{
-    var resData=characters.filter((element)=>{
+    var fCharacter=fCharacters.filter((element)=>{
       if(element.name.toString().toLowerCase().includes(searchdata.toLowerCase())
       ){
         return element;
       }
+      
     });
-    setCharacters(resData);
+    setCharacters(fCharacter);
   }
 
   
@@ -50,7 +51,6 @@ export const CharactersPage = () => {
       <img className="c-search__img" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/15bd4fae-6df6-4fca-8e4a-4889bba7186c.svg" alt="" />
         <input
           className="c-search__button"
-          value={fCharacters}
           placeholder="Buscar..."
           onChange={handleChange}
         />
