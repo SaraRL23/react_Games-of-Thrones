@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     background-color: black;
     margin-top: 60px;
-    height: 80vh;
+    height: 78vh;
 
 }
 .busqueda__search{
@@ -39,6 +39,8 @@
 .busqueda__gallery{
     display: flex;
     flex-wrap: wrap; 
+    height: 78vh;
+    width: 90%;
  
 }
 .timeline-container {

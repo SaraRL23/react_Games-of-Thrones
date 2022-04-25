@@ -54,7 +54,10 @@ export const Chronology = () => {
       
       <VerticalTimeline>
         <div className="c-container__btn">
-      <button className="c-chronology__btn" onClick={changeOrder}>{orderedCharacters[0].age.age}</button>
+          {orderedCharacters[0] &&
+            <button className="c-chronology__btn" onClick={changeOrder}>{orderedCharacters[0].age.age}</button>
+          }
+      
       </div>
         {orderedCharacters.map(element => {
           return (
